@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/mptc.jpg');*/
+    background: url('../images/mptc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background: #209b91;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    padding: 20px 0 10px 0;
+    text-align: center;
+    background-color: #8ef38b;
+    border-bottom: 1px solid #eee;
+}
+
+.college-name, .system-name{
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: #1a237e; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding:5px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link {
+    display: block;
+    padding: 18px 25px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-link:hover {
+    color: #1a237e;
+    background-color: #f0f2f5;
+}
+
+.logout-btn {
+    color: #d32f2f !important;
+    font-weight: 600;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.submenu li a {
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    color: #444;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background 0.2s;
+}
+
+.submenu li a:hover {
+    background: #209b91;
+    color: white;
+}
+
+.show {
+    display: block !important;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top:15px;
+}
+
+.welcome-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px 40px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+}
+
+.welcome-card h1 {
+    color: #2c3e50;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.welcome-card h1 span {
+    color: #1a237e;
+    font-weight: 600;
+}
+
+.welcome-card p {
+    color: #666;
+    line-height: 1.6;
+}
